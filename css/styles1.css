@@ -1,0 +1,54 @@
+#task1{
+    text-align: center;
+    margin: 0 auto;
+    height: 100vh;
+    width: 50%;
+}
+#task1 header, #task1 nav, #task1 section, #task1 footer{
+    display: flex;
+    justify-content: center;
+}
+#task1 header, #task1 footer{
+    height: 10vh;
+    border-radius: 10px 10px 0 0;
+    background-color: #2F3B59;
+    background-image: radial-gradient( circle closest-side, yellow, #7a87a8 );
+}
+#task1 p{
+    color: #FFF;
+}
+#task1 nav{
+    height: 10vh;
+    background-color: #25b871;
+    background-image: radial-gradient( circle closest-side, yellow, #5c698a );
+}
+#task1 section{
+    height: 70vh;
+    background-color: #25b871;
+    background-image: linear-gradient( #778cc1, yellow, #778cc1 );
+}
+#task1 section article{
+    margin-top: 10px;
+    color: #FFF;
+    background-color: rgba(238, 238, 238, 0.2);
+    width: 90%;
+}
+#task1 section article details { padding-top: 5px; }
+#task1 section article img{
+    max-width: 92%;
+    height: 42vh;
+    border-radius: 11px;
+    background: #FFF;
+    padding: 2px;
+}
+#task1 footer{
+    border-radius: 0 0 10px 10px;
+}
+
+details[open] summary ~ * {
+    animation: sweep .6s ease-in-out;
+}
+@keyframes sweep {
+    0%    {opacity: 0; margin-left: -10px}
+    100%  {opacity: 1; margin-left: 0px}
+}

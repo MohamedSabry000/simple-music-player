@@ -1,0 +1,63 @@
+#task3{
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    font-family: Arial;
+}
+#task3 > section{
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid #CCC;
+    border-radius: 6px;
+}
+#task3 > section header{
+    padding: 7px 0;
+    border-bottom: 1px dashed #CCC;
+    margin-bottom: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+#task3 > section section{ padding: 15px; }
+#task3 .audio{ padding: 13px; }
+#task3 .audio audio{ width: 100%; }
+
+#task3 .audio-btns button{
+    padding: 7px;
+    width: 14%;
+}
+
+#task3 .list-container{
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #CCC;
+}
+#task3 .list-container button{
+    width: 14%;
+    margin-left: 10px;
+}
+#task3 #items{
+    border: 1px solid #CCC;
+    margin: 10px;
+    margin-top: -10px;
+    padding: 10px;
+    text-align: left;
+}
+#task3 input[type="checkbox"]{
+    margin: 0 10px;
+    border-bottom: 1px solid #CCC;
+    display: inline-block;
+}
+#task3 #addSongForm{
+    padding: 10px;
+    display: none;
+}
+#task3 .singleItem{
+    padding: 5px;
+    border-bottom: 1px solid #CCC;
+}
+#task3 .singleItem label{
+    display: inline-block;
+    cursor: pointer;
+
+}

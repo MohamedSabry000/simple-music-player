@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles2.css">
+</head>
+<body>
+    <main id="task2">
+        <form action="">
+            <header> I'm a Form</header>
+            <section>
+                <div class="field">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" required />
+                </div>
+                <div class="field">
+                    <label for="mail">Email</label>
+                    <input type="email" name="email" id="mail" required autocomplete pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"/>
+                </div>
+                <div class="field">
+                    <label for="pass">Password</label>
+                    <input type="password" name="pass" id="pass" required pattern="[a-zA-Z0-9._%+-]{8,}$" />
+                </div>
+                <div class="field">
+                    <label for="sal">Salary</label>
+                    <input type="range" name="salary" id="sal" step="10" min="10" max="10000" value="5000" onchange="getSalary(this)" />
+                    <label id="show-salary-info" for="sal">5000</label>$
+                    <!-- <input id="show-salary-info" type="text" value="0" disabled> -->
+                </div>
+                <div class="field">
+                    <label for="age">Age</label>
+                    <input type="number" step="1" min="11" name="age" id="age" value="11" oninput="checkAge(this)"/>
+                </div>
+            </section>
+
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+
+    <script>
+        const getSalary = (e) => { document.getElementById("show-salary-info").innerText = e.value; }
+        const checkAge = (input) => { input.value < 21? input.setCustomValidity('The number must be higher than 20.') : input.setCustomValidity(''); }
+    </script>
+</body>
+</html>

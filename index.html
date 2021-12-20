@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles3.css">
+</head>
+<body>
+    <main id="task3">
+        <section action="">
+            <header> I'm a Music Player</header>
+            <section>
+                <div class="audio">
+                    <audio id="main-audio" controls>
+                        <source id="audioSource" src="./musicSource/Khaled Agag - As3ab Hob _ خالد عجاج - أصعب حب(MP3_160K).mp3" type="audio/mpeg">
+                      Your browser does not support the audio element.
+                    </audio> 
+                </div>
+                <div class="audio-btns">
+                    <button id="shuffle">Shuffle</button>
+                    <button id="repeate">Repeat</button>
+                    <button id="play">Play</button>
+                </div>
+                <div class="audio-list">
+                    <div class="list-container">
+                        <form id="addSongForm">
+                            <input type="file" name="addSong" id="getSongFile">
+                        </form>
+                        <button id="addToList">Add</button>
+                        <button id="removeFromList">Remove</button>
+                    </div>
+                    <div id="items">
+                        <div>
+                            <input type="checkbox" name="songs" value="1">
+                            <label>Hello</label>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+    <script src="./js/js.js"></script>
+</body>
+</html>

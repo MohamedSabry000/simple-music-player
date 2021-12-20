@@ -1,0 +1,49 @@
+#task2{
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    font-family: Arial;
+}
+#task2 form{
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid #CCC;
+    border-radius: 6px;
+}
+#task2 form header{
+    padding: 7px 0;
+    border-bottom: 1px dashed #CCC;
+    margin-bottom: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+#task2 form section{ padding: 15px; }
+#task2 .field{ padding: 13px; }
+#task2 .field label{ 
+    display: inline-block; 
+    width: 20%;
+    text-align: left;
+}
+#task2 .field input{ 
+    display: inline-block;
+    width: 44%;
+    padding: 5px;
+    padding-left: 10px;
+    vertical-align: middle;
+}
+#task2 .field input[name="salary"]{ width: 29%; }
+#task2 .field #show-salary-info{ 
+    display: inline-block;
+    width: 12%;
+    text-align: right;
+    padding: 6px;
+}
+#task2 button[type="submit"]{
+    width: 50%;
+    padding: 8px 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
